@@ -66,9 +66,18 @@ n_s_orb_tot=1
 total p-orbital
 n_p_orb_tot=0
 
-
+S-orbital x direction:
+Sx_info:
 1 0.0 0.0 0.0 3.42525091 0.15432897 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0 
+
+
+S-orbital y direction:
+Sy_info:
 1 0.0 0.0 0.0 0.62391373 0.53532814 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
+
+
+S-orbital z direction:
+Sz_info:
 1 0.0 0.0 0.0 0.16885540 0.44463454 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
 
 
