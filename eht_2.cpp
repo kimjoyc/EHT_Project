@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <armadillo>
 #include <stdexcept>
@@ -587,7 +585,7 @@ int main(int argc, char* argv[])
   ReadShellparameter(sh1,sh2,sh3,fname_1);
   Shell shell_arr[3]={sh1,sh2,sh3};
   
-  //H3
+  //H2
   Shell sh4,sh5,sh6;
   string fname_2=argv[2];
   ReadShellparameter(sh4,sh5,sh6,fname_2);
