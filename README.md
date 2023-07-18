@@ -19,6 +19,9 @@ The Data Structure for the Atom Information is compirsed of each file containing
 
 Here is an example of each paramter: 
 elem_num,x0, y0, z0, alpha,d, l0,l1,l2,gamma,beta,n_s_orb,n_p_orb,U_s_orb,U_p_orb,heat_of_formation,n_s_orb_tot,n_p_orb
+
+
+
 1 0.0 0.0 0.0 3.42525091 0.15432897 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0 
 1 0.0 0.0 0.0 0.62391373 0.53532814 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
 1 0.0 0.0 0.0 0.16885540 0.44463454 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
