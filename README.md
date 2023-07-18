@@ -89,3 +89,18 @@ bash eht.sh
 
 ## Utilties Function 
 Factorial and Combinations 
+
+## Conclusion / Results
+
+### Methodology Challenges
+The main challenge in implementing the code was related to setting up the H-matrix correctly. Since there are multiple orbitals belonging to carbon atoms, it was necessary to filter the parameters based on the type of atomic bonds (C-H, C-C, H-H) and the interacting orbitals. The approach involved using atomic numbers and angular momentum to separate the different possibilities of C-H bond pairs (ss or sp-pairs) and C-C pairs (pp-pairs). However, as the molecules became larger, it became apparent that the H-matrix was not properly set up to solve for the correct eigenvalues, leading to inaccuracies in the results.
+
+### Results and Limitations
+The code implementation only yielded a result for diatomic hydrogen gas, with a calculated heat of formation of 0.104 kcal/mol, slightly deviating from the paper's value of 0.0 kcal/mol. Additionally, using different coordinate systems (atomic units instead of NIST angstrom coordinates) resulted in a slight discrepancy in the calculation for hydrogen gas.
+
+Unfortunately, due to limited information and missing Cartesian coordinate data for larger molecules in the dataset, it was challenging to obtain accurate heat of formation values for the 47 molecules listed in Table 2 of the paper. The paper's source of this information is unclear. The limitations in accessing the necessary data hindered further progress in the project.
+
+### Future Improvements
+To overcome the coding challenges, future improvements can be made by reevaluating the data structure and ensuring the availability of accurate and complete data. Implementing internuclear distances instead of relying solely on Cartesian coordinates could lead to more accurate results. Additionally, a potential modification could involve using a mapping approach instead of filtering conditions for atomic orbital pairs to improve the accuracy and efficiency of the code.
+
+Considering the limitations and incomplete data available, the project was concluded at this stage. It should be noted that obtaining the total energy of organic molecules was challenging, with only heat of combustion data (e.g., ethane) being readily available online.
