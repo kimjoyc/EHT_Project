@@ -1,43 +1,34 @@
 # EHT_Project
 
-UNIVERSITY OF CALIFORNIA BERKELEY
-Numerical Algorithms Applied to Computational Quantum Chemistry
-Class Project Guidelines and Suggestions.
-Prof. Martin Head-Gordon and Steve Shen
-Due Dec. 15, 2021
-1 GENERAL INSTRUCTIONS.
-To finish the semester, we would like you to either further develop the SCF program you wrote
-for CNDO/2 or the non-iterative extended Huckel method that you developed, or write some-
-thing entirely new. Here is your chance to go beyond structured homeworks and exercise
-your creativity in some scientific programming! This should be the equivalent of 1-2 home-
-work sets in terms of effort, but we know different people have different time constraints, so
-we’ll work with you to try to make sure that you are choosing something achievable.
-We do want each of you to produce something that you are proud of, that reflects what
-you’ve learned throughout the degree so far, and takes you further. Also, since this class has
-had problem sets that build cumulatively on each other, by building further with the project,
-you may even be able to take your code and use or further develop it in Prof. Demmel’s par-
-allel computing class next semester!
-Here is the schedule for our class project:
-1. November 18: Select a topic, in consultation with Jiashu and myself – see choices be-
-low.
-2. December 7: Preliminary progress report. This will be a 10 minute discussion with
-Steve and myself on December 7 to describe your initial progress and plans.
-3. December 15: Present your theory, design, code, tests, and results to the class in a 20
-minute talk, allowing at least 5 minutes for questions. We will do presentations on Dec.
-15 and possibly the day before, and conceivably the day after...
-1
-2 CHOOSING A PROJECT.
-The main idea of the project is for you each to do something different and individual. The
-topic can be something drawn from the class topics, or an extension of them. Ideally it should
-be something that interests you, and makes you want to go further! A list of potentially suit-
-able topics are given below. They are not all equally difficult, so a rough estimate of how many
-homework sets each one is equivalent to is given. Regardless of the level of difficulty, we will
-award bonus points for outstanding achievements in the project! You can either choose one
-of the topics below, or use the list to get you thinking about your own project suggestion. Re-
-gardless, we want everyone to have their own project, so once a topic is selected by someone,
-it will no longer be available.
+## Abstract 
+The paper presents a modified Extended Hückel method that provides accurate values of heats of formation and structural parameters for hydrocarbons. The method is computationally efficient and can predict reaction enthalpies for various hydrocarbon transformations. The results of the method are compared to experimental data for a wide range of molecules and radicals, showing good agreement with a mean absolute error of 1.90 kcal/mol.
 
-4. Extend your Huckel code to include the pairwise atomic corrections needed to obtain
-high accuracy for hydrocarbons (see the paper by Voityuk posted under reading ma-
-terial), and implement the gradient. Get some results and compare to your CNDO/2
-code for accuracy of structures and relative energies.
+## Method
+The total energy of the system is calculated as the sum of the electronic energy and short-range repulsion energy. The electronic energy is obtained by solving eigenvalue equations, while the repulsion energy is approximated using two-center potentials. The method employs an orthogonal atomic orbital basis for computational efficiency.
+
+## Parameters
+
+
+
+The parameters of the effective Hamiltonian and the repulsion potential are derived by fitting them to experimental heats of formation and structural parameters for a training set of molecules and radicals. The fitted parameters are then used to calculate the heats of formation for various hydrocarbons.
+
+## Molecule Data 
+## Each Atom has an orbital that is in 3D 
+EX: Hydrogen has on s-orbital but each paramters are different for S-orbital in x dimension, S-orbital in y dimension, and S-orbital in z dimension: 
+The Data Structure for the Atom Information is compirsed of each file containing Atomic Orbital of that Atom like Hydrogen S-orbital in in the x,y,z order from top to bottom. 
+
+Here is an example of each paramter: 
+elem_num,x0, y0, z0, alpha,d, l0,l1,l2,gamma,beta,n_s_orb,n_p_orb,U_s_orb,U_p_orb,heat_of_formation,n_s_orb_tot,n_p_orb
+1 0.0 0.0 0.0 3.42525091 0.15432897 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0 
+1 0.0 0.0 0.0 0.62391373 0.53532814 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
+1 0.0 0.0 0.0 0.16885540 0.44463454 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0
+
+
+## Compile Instructions
+Fill in Paramters as follows: 
+```
+bash eht.sh 
+```
+
+## Utilties Function 
+Factorial and Combinations 
