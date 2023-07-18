@@ -6,7 +6,7 @@
 #include <math.h>
 #include <sstream>
 #include <cassert>
-#include "../../util.h"
+#include "util.h"
 #include <stdlib.h>
 #include <stdexcept>
 #include <armadillo>
