@@ -12,8 +12,8 @@ The total energy of the system is calculated as the sum of the electronic energy
 
 The parameters of the effective Hamiltonian and the repulsion potential are derived by fitting them to experimental heats of formation and structural parameters for a training set of molecules and radicals. The fitted parameters are then used to calculate the heats of formation for various hydrocarbons.
 
-## Molecule Data 
-## Each Atom has an orbital that is in 3D 
+## Molecule Data Structure 
+### Each Atom has an orbital that is in 3D 
 EX: Hydrogen has on s-orbital but each paramters are different for S-orbital in x dimension, S-orbital in y dimension, and S-orbital in z dimension: 
 The Data Structure for the Atom Information is compirsed of each file containing Atomic Orbital of that Atom like Hydrogen S-orbital in in the x,y,z order from top to bottom. 
 
