@@ -8,8 +8,6 @@ The total energy of the system is calculated as the sum of the electronic energy
 
 ## Parameters
 
-
-
 The parameters of the effective Hamiltonian and the repulsion potential are derived by fitting them to experimental heats of formation and structural parameters for a training set of molecules and radicals. The fitted parameters are then used to calculate the heats of formation for various hydrocarbons.
 
 ## Molecule Data Structure 
@@ -18,8 +16,55 @@ EX: Hydrogen has on s-orbital but each paramters are different for S-orbital in 
 The Data Structure for the Atom Information is compirsed of each file containing Atomic Orbital of that Atom like Hydrogen S-orbital in in the x,y,z order from top to bottom. 
 
 Here is an example of each paramter: 
-elem_num,x0, y0, z0, alpha,d, l0,l1,l2,gamma,beta,n_s_orb,n_p_orb,U_s_orb,U_p_orb,heat_of_formation,n_s_orb_tot,n_p_orb
+elem_num,x0, y0, z0, alpha,d, l0,l1,l2,gamma,beta,n_s_orb,n_p_orb,U_s_orb,U_p_orb,heat_of_formation,n_s_orb_tot,n_p_orb_tot
 
+S-orbital in the x direction: 
+elem_num= 1
+
+Cartesian Coordinate info: 
+x0=0.0
+y0=0.0 
+z0=0.0 
+
+Exponents and contraction coefficients for STO-3G for the standard light elements(in atomic units):
+
+exponent:
+alpha=3.42525091 
+
+contraction coeffiecient for s-orbital:
+d=0.15432897
+
+angular momentum for s-orbital:
+l0=0
+l1=0
+l2=0
+
+Semi-empirical parameters that define the CNDO/2 model:
+
+for H:
+gamma=-7.176
+
+for H:
+beta=-9
+
+Number of s-orbital
+n_s_orb=1
+
+Number of p-orbital
+n_p_orb=0
+
+Atomic Parameters Chart in eV:
+U_s_orb=-13.605
+U_p_orb=0
+
+for Hydrogen: 
+heat_of_formation=52.1 kcal/mol 
+
+total s-orbital
+n_s_orb_tot=1
+
+total p-orbital
+n_p_orb_tot=0
 
 
 1 0.0 0.0 0.0 3.42525091 0.15432897 0 0 0 -7.176 -9 1 0 -13.605 0 52.1 1 0 
