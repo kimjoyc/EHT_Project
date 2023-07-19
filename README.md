@@ -6,9 +6,17 @@ The paper presents a modified Extended Hückel method that provides accurate val
 ## Method
 The total energy of the system is calculated as the sum of the electronic energy and short-range repulsion energy. The electronic energy is obtained by solving eigenvalue equations, while the repulsion energy is approximated using two-center potentials. The method employs an orthogonal atomic orbital basis for computational efficiency.
 
+![IMG_5773 (2)](https://github.com/kimjoyc/EHT_Project/assets/88675769/785474e3-6c67-4f02-9308-bc77a326721d)
+
 ## Parameters
 
 The parameters of the effective Hamiltonian and the repulsion potential are derived by fitting them to experimental heats of formation and structural parameters for a training set of molecules and radicals. The fitted parameters are then used to calculate the heats of formation for various hydrocarbons.
+
+![IMG_5770](https://github.com/kimjoyc/EHT_Project/assets/88675769/edcf7e9b-56ba-4fbb-a8d4-ee7d1cececc0)
+
+![IMG_5775 (2)](https://github.com/kimjoyc/EHT_Project/assets/88675769/9fe6d70d-efc3-44e9-bc8d-c8b43c6f1965)
+
+![IMG_5774 (2)](https://github.com/kimjoyc/EHT_Project/assets/88675769/d9785a96-611a-4bb5-841b-2d0d3cacc0b0)
 
 ## Molecule Data Structure 
 ### Each Atom has an orbital that is in 3D 
