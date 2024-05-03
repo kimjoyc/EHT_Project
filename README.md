@@ -1,4 +1,9 @@
 # EHT_Project
+## Aim 
+Extend your Huckel code to include the pairwise atomic corrections needed to obtain
+high accuracy for hydrocarbons (see the paper by Voityuk posted under reading ma-
+terial), and implement the gradient. Get some results and compare to your CNDO/2
+code for accuracy of structures and relative energies. 
 
 ## Abstract 
 The paper presents a modified Extended Hückel method that provides accurate values of heats of formation and structural parameters for hydrocarbons. The method is computationally efficient and can predict reaction enthalpies for various hydrocarbon transformations. The results of the method are compared to experimental data for a wide range of molecules and radicals, showing good agreement with a mean absolute error of 1.90 kcal/mol.
